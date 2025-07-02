@@ -1,125 +1,258 @@
-/* Base styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
+body{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    background-color: #1f242d;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    
+    
 }
 
-body {
-  background-color: #0e0e0e;
-  color: white;
-  line-height: 1.6;
+
+.head .left{
+    display: flex;
+    font-size: large;
+    font-weight: 600;
+    padding-left: 60px;
+   
+
 }
 
-/* Header */
-.head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
+.head .left:hover{
+    color: #7cf03d;
+}
+.head{
+    display: flex   ;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 2px white;
+    background-color: white;
+    color: #1f242d;
+}
+
+.head .right a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding:10 5 10 5;    
+    padding-right: 50px;
+    text-align: center;
+    
+
+}
+
+.head .right a:hover{
+    color: #7cf03d;
+    cursor: pointer;
+        }
+
+.head .right {
+      text-align: center;
+      font-weight: 800;
+      display: flex;
+}
+/* 
+image and about */
+
+.about{
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    padding: 50 30 50 50px;
+}
+
+.about .image img {
+  border-radius: 30px 10px 60px 10px;
+  border: 2px solid #7cf03d99;
+  box-shadow: 0 0 10px #7cf03d99,
+              0 0 20px #7cf03d99,
+              0 0 30px #7cf03d99;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.about .content{
+    text-align: start;
+    padding-left: 60px;
+}
+
+/* skill */
+.skills section{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
+.skills section h3{
+    padding: 10 50 10 50;
+
+}
+.skills h1:hover{
+    color: #7cf03d;
+    cursor: pointer;
+}
+.content h1:hover{
+    color: #7cf03d;
+    cursor: pointer;
+}
+
+.skills section h3{
+    border: white 2px solid;
+    border-radius: 10px;
+    display: inline;
+    background-color: rgb(93, 255, 17);
+    color: #1f242d;
+    box-shadow: 0 0 10px #7cf03d99,
+              0 0 10px #7cf03d99,
+              0 0 10px #7cf03d99;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+    
+    
+    
+}
+
+
+.skills section h3:hover{
+    color: black;
+}
+
+.contact{
+    /* border: 2px solid white     ; */
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* display: inline-block; */
+    display: grid;
+    padding-bottom: 50px;
+    
+}
+
+form {
+  margin: 40px auto;
+  max-width: 600px;
+  /* background-color: white  ;
+  color: black; */
+  padding: 30px;
+  /* border-radius: 15px;
+  box-shadow: 0 0 10px #7cf03d88; */
+}
+
+form table {
+  width: 100%;
+  color: rgb(255, 255, 255);
+  border-spacing: 15px;
+   box-shadow: 0 0 10px #7cf03d99,
+              0 0 10px #7cf03d99,
+              0 0 10px #7cf03d99;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  font-weight: 900;
+}
+
+form td {
+  vertical-align: top;
   
 }
 
-.head .left h1 {
-  font-size: 28px;
-  font-weight: 600;
-  color: white;
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #7cf03d99;
+  border-radius: 10px;
+  background-color: #fff7f7;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: 200;
 }
-.head .left h1:hover{
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #7cf03d;
+  box-shadow: 0 0 10px #7cf03d88;
+}
+
+
+form input:hover{
     color: #7cf03d;
-    cursor: grab;
-
-}
-.head .right ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
+    cursor: pointer;
 }
 
-.head .right ul li a {
-  text-decoration: none;
-  color: white;
-  padding: 8px 16px;
-  font-weight: 600;
-  border-radius: 6px;
-  transition: 0.3s ease;
+.resume-link {
+  
+  margin: 40px 0;
 }
 
-.head .right ul li a:hover {
+.resume-link a {
+  display: inline-block;
   background-color: #7cf03d;
   color: #0e0e0e;
+  padding: 12px 24px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #7cf03d;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-/* About Section */
-.about {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px 40px;
-  /* flex-wrap: wrap; */
+.resume-link a:hover {
+  background-color: #a0ff61;
+  box-shadow: 0 0 20px #7cf03d;
 }
 
-.about .content {
-  flex: 1;
-  /* min-width: 300px; */
-  margin-right: 40px;
-}
-
-.about .content h2 {
-  font-size: 36px;
-  color: #ffffff;
-  margin-bottom: 10px;
-}
-
-
-.about .content h3 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.about .content p {
-  font-size: 16px;
-  color: #ccc;
-}
-
-
-/* Profile Image */
-.about .image img {
-  border-radius: 50%;
-  border: 5px solid #7cf03d;
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  box-shadow: 0 0 20px #7cf03d, 0 0 40px #7cf03d, 0 0 60px #7cf03d;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.about .image img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 30px #7cf03d, 0 0 60px #7cf03d, 0 0 90px #7cf03d;
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
-  .about {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .about .content {
-    margin: 0 0 30px 0;
-  }
-
   .head {
     flex-direction: column;
     align-items: flex-start;
+    padding: 10px;
   }
 
-  .head .right ul {
+  .head .left {
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  .head .right {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .about .content {
+    padding: 0;
+  }
+
+  .about .image img {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .skills section {
     flex-direction: column;
     gap: 10px;
-    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .skills section h3 {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  form {
+    padding: 20px;
   }
 }
+
