@@ -1,0 +1,125 @@
+/* Base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #0e0e0e;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Header */
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  
+}
+
+.head .left h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+}
+.head .left h1:hover{
+    color: #7cf03d;
+    cursor: grab;
+
+}
+.head .right ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.head .right ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.head .right ul li a:hover {
+  background-color: #7cf03d;
+  color: #0e0e0e;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  /* flex-wrap: wrap; */
+}
+
+.about .content {
+  flex: 1;
+  /* min-width: 300px; */
+  margin-right: 40px;
+}
+
+.about .content h2 {
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+
+.about .content h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about .content p {
+  font-size: 16px;
+  color: #ccc;
+}
+
+
+/* Profile Image */
+.about .image img {
+  border-radius: 50%;
+  border: 5px solid #7cf03d;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  box-shadow: 0 0 20px #7cf03d, 0 0 40px #7cf03d, 0 0 60px #7cf03d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about .image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #7cf03d, 0 0 60px #7cf03d, 0 0 90px #7cf03d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about .content {
+    margin: 0 0 30px 0;
+  }
+
+  .head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .head .right ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
